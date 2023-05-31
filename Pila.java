@@ -9,9 +9,7 @@ public class Pila<E> {
 	}
 	
 	public boolean isEmpty() {
-		return this.head == null;	public void push(E x, Pila P){
-		P.insertar(x);
-	}
+		return this.head == null;
 	}
 	
 	public int lenght() {
