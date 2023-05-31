@@ -1,6 +1,7 @@
 public class Pila<E> {
 	private Node<E> head;
 	private int count;
+	private int capacidad;
 	
 	public EmptyStack() {
 		this.head = null;
@@ -8,7 +9,9 @@ public class Pila<E> {
 	}
 	
 	public boolean isEmpty() {
-		return this.head == null;
+		return this.head == null;	public void push(E x, Pila P){
+		P.insertar(x);
+	}
 	}
 	
 	public int lenght() {
@@ -20,9 +23,6 @@ public class Pila<E> {
 		this.count ++;
 	}
 	
-	public void push(E x, Pila P){
-		P.insertar(x);
-	}
 	
 	public void insertar(E x) {
 		if (isEmpty())
