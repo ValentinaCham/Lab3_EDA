@@ -2,7 +2,7 @@ public class Pila<E> {
 	private Node<E> head;
 	private int count;
 	
-	public ListLinked() {
+	public EmptyStack() {
 		this.head = null;
 		this.count = 0;
 	}
@@ -20,7 +20,11 @@ public class Pila<E> {
 		this.count ++;
 	}
 	
-	public void insertLast(E x) {
+	public void push(E x, Pila P){
+		P.insertar(x);
+	}
+	
+	public void insertar(E x) {
 		if (isEmpty())
 			insertFirst(x);
 		else {
